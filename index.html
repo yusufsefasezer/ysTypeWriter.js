@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>ysTypeWriter.js - Simple typewriter</title>
+    <script src="./dist/ystypewriter.min.js"></script>
+</head>
+
+<body>
+    <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Possimus expedita natus provident ullam quo asperiores officiis</strong> modi delectus aliquam sed maxime similique commodi, <em>incidunt suscipit molestiae ducimus aliquid repudiandae ut!</em>
+    </p>
+    <script>
+        var customElement = document.querySelector('p#text');
+
+        var myTypeWriter = new ysTypeWriter(customElement);
+
+        myTypeWriter.writeHTML(customElement.innerHTML);
+    </script>
+</body>
+
+</html>
