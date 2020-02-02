@@ -1,7 +1,7 @@
 # ysTypeWriter.js
 ysTypeWriter.js is a simple typewriter typing plugin, without need additional components.
 
-### [Download](https://github.com/yusufsefasezer/ysTypeWriter.js/archive/master.zip) / [Demo](http://www.yusufsezer.com/projects/ysTypeWriter/) / [yusufsezer.com](http://www.yusufsezer.com)
+### [Download](https://github.com/yusufsefasezer/ysTypeWriter.js/archive/master.zip) / [Demo](http://www.yusufsezer.com/ysTypeWriter/) / [yusufsezer.com](http://www.yusufsezer.com)
 
 # Getting Started
 
