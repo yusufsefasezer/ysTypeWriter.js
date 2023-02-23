@@ -111,7 +111,7 @@
         var typeWrite = function () {
 
             // skip HTML tags
-            if (typeText.substr(typeIndex).charAt(0) === '<' && isHTML) {
+            if (typeText.substring(typeIndex).charAt(0) === '<' && isHTML) {
                 typeIndex = typeText.indexOf('>', typeIndex) + 1;
             }
 
