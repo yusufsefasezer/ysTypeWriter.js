@@ -17,10 +17,10 @@
     //
 
     /**
-	 * Check if browser supports required methods.
+     * Check if browser supports required methods.
      * @private
-	 * @return {Boolean} Returns true if all required methods are supported.
-	 */
+     * @return {Boolean} Returns true if all required methods are supported.
+     */
     var supports = function () {
         return (
             'querySelector' in document
@@ -28,11 +28,11 @@
     };
 
     /**
-	 * Check `obj` is a HTMLElement.
+     * Check `obj` is a HTMLElement.
      * @private
      * @param {Object} obj The obj to check.
-	 * @returns {Boolean} Returns `true` if `obj` is a HTMLElement, else `false`.
-	 */
+     * @returns {Boolean} Returns `true` if `obj` is a HTMLElement, else `false`.
+     */
     var isElement = function (obj) {
         return obj instanceof HTMLElement;
     };
