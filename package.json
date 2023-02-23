@@ -4,7 +4,7 @@
   "description": "Simple typewriter plugin.",
   "main": "./dist/ystypewriter.min.js",
   "author": {
-    "name": "Yusuf SEZER",
+    "name": "Yusuf Sezer",
     "email": "yusufsezer@mail.com",
     "url": "http://www.yusufsezer.com/"
   },
