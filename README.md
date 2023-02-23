@@ -1,7 +1,7 @@
 # ysTypeWriter.js
 ysTypeWriter.js is a simple typewriter typing plugin, without need additional components.
 
-### [Download](https://github.com/yusufsefasezer/ysTypeWriter.js/archive/master.zip) / [Demo](http://www.yusufsezer.com/ysTypeWriter.js/) / [yusufsezer.com](http://www.yusufsezer.com)
+### [Download](https://github.com/yusufsefasezer/ysTypeWriter.js/archive/master.zip) / [Demo](https://www.yusufsezer.com/projects/ystypewriter-js/) / [yusufsezer.com](https://www.yusufsezer.com)
 
 # Getting Started
 
@@ -97,4 +97,4 @@ myTypeWriter.writeHTML(customElement.innerHTML);
 # License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details
 
-Created by [Yusuf SEZER](http://www.yusufsezer.com)
+Created by [Yusuf Sezer](https://www.yusufsezer.com)
