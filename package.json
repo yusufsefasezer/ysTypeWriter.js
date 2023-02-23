@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/yusufsefasezer/ysTypeWriter.js#readme",
   "devDependencies": {
-    "del": "^7.0.0",
+    "del": "^6.1.1",
     "gulp": "^4.0.2",
     "gulp-header": "^2.0.9",
     "gulp-rename": "^2.0.0",
