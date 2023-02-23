@@ -45,12 +45,6 @@ function build() {
         .pipe(gulp.dest(paths.output))
 }
 
-// gulp.task('watch', function () {
-//     gulp.watch(paths.input).on('change', function () {
-//         gulp.start('default');
-//     });
-// });
-
 exports.clean = clean;
 exports.build = build;
 exports.watch = function () {
