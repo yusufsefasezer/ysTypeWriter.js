@@ -1,6 +1,6 @@
 /*!
  * ystypewriter - Simple typewriter plugin.
- * Author: Yusuf SEZER <yusufsezer@mail.com>
+ * Author: Yusuf Sezer <yusufsezer@mail.com>
  * Version: v1.0.0
  * Url: https://github.com/yusufsefasezer/ysTypeWriter.js
  * License: MIT
@@ -119,7 +119,7 @@
         var typeWrite = function () {
 
             // skip HTML tags
-            if (typeText.substr(typeIndex).charAt(0) === '<' && isHTML) {
+            if (typeText.substring(typeIndex).charAt(0) === '<' && isHTML) {
                 typeIndex = typeText.indexOf('>', typeIndex) + 1;
             }
 

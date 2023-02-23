@@ -1,10 +1,7 @@
 const gulp = require('gulp');
-const fs = require('fs');
 const del = require('del');
-const lazypipe = require('lazypipe');
 const rename = require('gulp-rename');
 const header = require('gulp-header');
-const watch = require('gulp-watch');
 const package = require('./package.json');
 
 // Scripts
@@ -33,27 +30,30 @@ var banner = {
         ' */\n'
 };
 
-gulp.task('clean', function () {
+function clean(resolve) {
     del.sync([paths.output]);
-});
+    resolve();
+}
 
-gulp.task('build', function () {
-    const jsTasks = lazypipe()
-        .pipe(header, banner.full, { package: package })
-        .pipe(gulp.dest, paths.output)
-        .pipe(rename, { suffix: '.min' })
-        .pipe(uglify)
-        .pipe(header, banner.min, { package: package })
-        .pipe(gulp.dest, paths.output)
-
+function build() {
     return gulp.src(paths.input)
-        .pipe(jsTasks());
-});
+        .pipe(header(banner.full, { package: package }))
+        .pipe(gulp.dest(paths.output))
+        .pipe(rename({ suffix: '.min' }))
+        .pipe(uglify())
+        .pipe(header(banner.min, { package: package }))
+        .pipe(gulp.dest(paths.output))
+}
 
-gulp.task('watch', function () {
-    gulp.watch(paths.input).on('change', function () {
-        gulp.start('default');
-    });
-});
+// gulp.task('watch', function () {
+//     gulp.watch(paths.input).on('change', function () {
+//         gulp.start('default');
+//     });
+// });
 
-gulp.task('default', ['clean', 'build']);
+exports.clean = clean;
+exports.build = build;
+exports.watch = function () {
+    gulp.watch(paths.input, build);
+}
+exports.default = gulp.series(clean, build);
